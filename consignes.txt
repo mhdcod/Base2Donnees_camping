@@ -1,0 +1,34 @@
+    Consignes BD camping
+
+Le sujet consiste à modéliser les informations pour un site web d'un camping. Le site de réservation de
+camping en ligne doit être conçu pour visualiser tous les hébergements de camping saisis par
+l'administrateur et les activités qui peuvent y être pratiquées. Il fait gagner du temps aux utilisateurs en
+facilitant la réservation.
+
+L’application doit permettre, suite à la création d'un compte, d'effectuer des réservations et de s'inscrire
+à des activités proposées. Les données du site web seront stockés dans une base de données MySQL
+dont le schéma sera défini en fonction de l'application envisagée.
+
+Dans cette plate-forme un client est caractérisé par : un nom, un prénom, une date de naissance valide
+(obligatoire), un genre, un numéro de téléphone (obligatoire), une adresse e-mail, un mot de passe qui
+ne dépasse pas 10 caractères.
+
+Le client peut effectuer une réservation d'un logement qui appartient à un parc parmi plusieurs situes sur
+le site de camping (on l’appelle Park Spot). Chaque Park Spot a une localisation et une image.
+Chaque Park Spot dispose de nombreux hébergements, qui peuvent être : Caravane, VR, tente, etc.…,
+pour chaque hébergement on doit savoir le nombre de chambres, le nombre de personnes max qui
+peuvent être reçues, une image...
+
+Chaque hébergement a un prix journalier, le prix du petit déjeuner par personne, avec l’option d’une
+remise (variable offre de type « boolean »), et cette offre à une date de début, une date de fin, et un
+nouveau prix de l’offre.
+
+Les réservations peuvent inclure des activités telles que : compétitions, randonnée, natation, plongée,
+pêche, chasse… chaque activité a aussi une date une date de début, une date de fin, un pris et un nombre
+maximal de participants et des contraintes de participation s’il y en a (age, ou autre).
+Le paiement contient des informations sur la carte de crédit que les utilisateurs utilisent pour payer leur
+réservation (à vous de mettre les attributs).
+
+L'administrateur peut modifier le contenu en ajoutant/actualisant/supprimant des Park Spots, des
+hébergements. L'administrateur peut modifier les prix et également ajouter/supprimer des offres.
+L'administrateur peut également accepter ou refuser les réservations.
